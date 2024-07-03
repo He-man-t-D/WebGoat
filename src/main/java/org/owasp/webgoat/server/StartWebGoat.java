@@ -32,6 +32,7 @@ import org.springframework.boot.Banner;
 import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @Slf4j
 public class StartWebGoat extends SpringBootServletInitializer{
