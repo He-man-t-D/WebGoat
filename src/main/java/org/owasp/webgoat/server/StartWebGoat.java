@@ -34,7 +34,13 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.context.ApplicationContext;
 
 @Slf4j
-public class StartWebGoat {
+public class StartWebGoat extends SpringBootServletInitializer{
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder application){
+        return application.sources(StartGoat.class);
+    }
+    
 
   public static void main(String[] args) {
     var parentBuilder =
