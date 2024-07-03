@@ -39,7 +39,7 @@ public class StartWebGoat extends SpringBootServletInitializer{
 
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application){
-        return builder.sources(StartWebGoat.class);
+        return application.sources(StartWebGoat.class);
     }
     
 
